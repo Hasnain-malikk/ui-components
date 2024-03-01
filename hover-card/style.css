@@ -1,0 +1,96 @@
+body{
+    background: #7bd6ff;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+h3{
+    margin: 0;
+    padding: 0;
+    color: #686767;
+    font-size: 17px;
+}
+.card{
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card-container {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.card:hover .card-container {
+    transform: rotateY(180deg);
+}
+.card-face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 11px 10px 8px 6px rgba(0, 0, 0, 0.2);
+}
+.container-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0 0 0;
+    padding: 20px;
+}
+.front-face{
+    transform: rotateY(0deg);
+}
+.back-face{
+    display: flex;
+    transform: rotateY(180deg);
+}
+.row{
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    font-size: 2rem;
+}
+.row i {
+    color: #686767;
+}
+.ig:hover {
+    color: #e1306c;
+}
+.git:hover {
+    color: #000000;
+}
+.fb:hover {
+    color: #3b5998;
+}
+.link:hover{
+    color: #0a66c2;
+}
